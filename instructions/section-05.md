@@ -47,7 +47,7 @@ Once again we see the usage of the *ObjectMapper* object, this time to convert j
 
 ## Part 4 - Refactor
 
-Now that we know how to read and write our objects to the super convenient JSON format, lets update our app. Change the services class to use JSON to save and load the inventory models.
+Now that we know how to read and write our objects to the super convenient JSON format, lets update our app. Change the service class to use JSON to save and load the inventory models.
 
 1. save and load application models with JSON
 2. save and load the *nextId* static data with a text file

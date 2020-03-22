@@ -133,7 +133,7 @@ Now it's time to thing about the Objects that will be apart of our inventory app
 As an example I will be using a store that sells Sneakers and Whiskey. So, I know I will definately have a Sneaker class and a Whiskey class. We will see later on that we will create a few more classes to help manage our inventory.
 
 1. Create feature branch
-2. Create packages for models, services and test 
+2. Create packages for models, service and test 
 3. Create models, service and test stubs
 4. Update git and push to github
 
@@ -158,7 +158,7 @@ The **src** package is where we will put most of our files. Inside you will find
 
 And inside both packages you will find a **java** folder. It is inside these "java" folders you will put you work. We also want to keep the folder structures between "main" and "test" packages the same. Let look at what this means.
 
-Lets create two packages inside main->java and lets call them "models" and "services"
+Lets create two packages inside main->java and lets call them "models" and "service"
 
 Many times developers will call the classes that represent and object as a "model". This package will contain the different products that are going to be inventoried. 
 
@@ -166,11 +166,11 @@ Many times developers will call the classes that represent and object as a "mode
 main
 ├── java
 │   ├── models
-│   └── services
+│   └── service
 └── resources
 ```
 
-As was stated earlier the "test" and "main" packages need to mirror each outher. So lets create "models" and "services" packages inside the test->java package.
+As was stated earlier the "test" and "main" packages need to mirror each outher. So lets create "models" and "service" packages inside the test->java package.
 
 The final package structure should look like the following.
 
@@ -178,7 +178,7 @@ The final package structure should look like the following.
 ├── main
 │   ├── java
 │   │   ├── models
-│   │   └── services
+│   │   └── service
 │   └── resources
 └── test
     └── java
@@ -194,14 +194,14 @@ src/main
 │   ├── models
 │   │   ├── Sneaker.java
 │   │   └── Whiskey.java
-│   └── services
+│   └── service
 │       ├── SneakerService.java
 │       └── WhiskeyService.java
 └── resources
 ```
-Because our store is so successful, we are really moving through inventory. So I would be nice to have a class that would help maintain all the items. A class that provided the service of creating and managing the items. For my example I will create a "SneakerService" class and a "WhiskeyService" class inside the services package.
+Because our store is so successful, we are really moving through inventory. So I would be nice to have a class that would help maintain all the items. A class that provided the service of creating and managing the items. For my example I will create a "SneakerService" class and a "WhiskeyService" class inside the service package.
 
-Because we are Doing Test Driven Development (TDD) we need to also have test classes for the models and the services.
+Because we are Doing Test Driven Development (TDD) we need to also have test classes for the models and the service.
 
 For my example store I will have the follwing test classes.
 
@@ -212,7 +212,7 @@ src
 │   │   ├── models
 │   │   │   ├── Sneaker.java
 │   │   │   └── Whiskey.java
-│   │   └── services
+│   │   └── service
 │   │       ├── SneakerService.java
 │   │       └── WhiskeyService.java
 │   └── resources
@@ -221,7 +221,7 @@ src
         ├── models
         │   ├── SneakerTest.java
         │   └── WhiskeyTest.java
-        └── services
+        └── service
             ├── SneakerServiceTest.java
             └── WhiskeyServiceTest.java
 ```
@@ -230,7 +230,7 @@ This is enough for our feature. We can *add* and *commit* our changes. Then merg
 
 ```
 git add .
-git commit -m 'add sneaker/whiskey models and services'
+git commit -m 'add sneaker/whiskey models and service'
 git checkout dev
 git merge feature-create-classes
 git branch -d feature-create-classes

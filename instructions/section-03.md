@@ -1,7 +1,7 @@
 # Section 3
 
 #### The Brief
-Now that we have production models and services to manage them we can pull everything together and add a UI to allow a user to interact with the application.
+Now that we have production models and service to manage them we can pull everything together and add a UI to allow a user to interact with the application.
 
 ### Objectives
 * Create a class responsible for user input and output
@@ -46,7 +46,7 @@ Console.printWelcome()
 Whenever we want to capture user input or display output we will create methods in the Console class to handle these behaviours.
 
 ## Part 2 - Application class
-Now it is time to put all of these classes we have created to work. We will begin by creating a App class to initialize the application logic and initialize the services. This is the top most class and will start the program
+Now it is time to put all of these classes we have created to work. We will begin by creating a App class to initialize the application logic and initialize the service. This is the top most class and will start the program
 
 ```
 public class App {
@@ -75,13 +75,13 @@ public class App {
 	public void init(){
 		// (4)
 		// application logic here 
-		// call methods to take user input and interface with services
+		// call methods to take user input and interface with service
 		Console.printWelcome();
 	}
 }
 ```
 
-1. Create the services needed to manage inventory
+1. Create the service needed to manage inventory
 2. Instantiate the application
 3. Call a method to initialize the application
 4. Use this method to kick of application logic

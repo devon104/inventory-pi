@@ -6,7 +6,7 @@ Continuing from Section 1, we will begin to code the models(classes that represe
 ### Objectives
 * Continue using git version control
 * Create test and implementations of data models
-* Create test and implementations of data services
+* Create test and implementations of data service
 
 ## Part 1 - Properties
 As of right now our models are empty and we need to add some properties. We need to think about what is needed to properly represent an item in our inventory. 
@@ -215,7 +215,7 @@ This is where Service classes comes handy. It will have methods for creating, fi
 
 As always start with a new branch
 
-**main/java/services/SneakerService.java**
+**main/java/service/SneakerService.java**
 
 ```java
 public class SneakerService {
@@ -231,7 +231,7 @@ public class SneakerService {
 
 As stated earlier, we are going to lean on this class to create, read, update, and delete. Lets go to the service test class and start with the sneaker creation behaviour.
 
-**/test/java/services/SneakerServiceTest.java**
+**/test/java/service/SneakerServiceTest.java**
 
 ```
 public class SneakerServiceTest {
@@ -280,7 +280,7 @@ public class SneakerServiceTest {
 
 Now it's time to implement the create sneaker logic:
 
-**/main/java/services/SneakerService.java**
+**/main/java/service/SneakerService.java**
 
 ```java
 // (1)
@@ -327,7 +327,7 @@ public boolean delete(int id) {
 ```
 Dont forget to write your tests first and commit along the way!
 
-Once you have completed this service, move on to the other services you will need to manage the other models.
+Once you have completed this service, move on to the other service you will need to manage the other models.
 
 Now if we ever need to change the way we create, read, update, delete these objects we can do it here in this service object. It will then be reflected everywhere the service is used to do these operations. 
 
@@ -335,4 +335,4 @@ Now if we ever need to change the way we create, read, update, delete these obje
 
 ## Conclusion
 
-We continued using git to make incremental changes to our program to ensure we have a recovery route if necessary. We added properties, getters and setters to the models and tested them as proof of implementation. Finally we created services for the models to help manage and centralize code.
+We continued using git to make incremental changes to our program to ensure we have a recovery route if necessary. We added properties, getters and setters to the models and tested them as proof of implementation. Finally we created service for the models to help manage and centralize code.
