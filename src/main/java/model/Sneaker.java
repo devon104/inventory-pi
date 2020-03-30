@@ -50,4 +50,8 @@ public class Sneaker {
         public double getPrice() {
         return price;
         }
+
+    public int getSize() {
+        return size;
+    }
 }
