@@ -14,7 +14,7 @@ public void createTest() {
     double expectedPrice = 100.10;
 
     SneakerService sneakerService = new SneakerService();
-    Sneaker testSneaker = SneakerService.create(expectedName, expectedBrand,
+    Sneaker testSneaker = sneakerService.create(expectedName, expectedBrand,
             expectedSport, expectedSize, expectedQty, expectedPrice);
 
 

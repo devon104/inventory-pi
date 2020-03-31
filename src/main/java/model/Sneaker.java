@@ -39,10 +39,12 @@ public class Sneaker {
         return id;
 
     }
-    public String getSport(){
+
+         public String getSport(){
         return sport;
-    }
-    public int getQty(){
+        }
+
+        public int getQty(){
         return qty;
         }
 
@@ -53,5 +55,5 @@ public class Sneaker {
 
     public int getSize() {
         return size;
-    }
+        }
 }

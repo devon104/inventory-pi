@@ -1,8 +1,9 @@
 package model;
 
-
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+
 
 public class SneakerTest {
 
@@ -27,13 +28,6 @@ public class SneakerTest {
         Assertions.assertEquals(expectedPrice, testSneaker.getPrice());
 
     }
-
-
-
-
-
-
-
     @Test
     public void testSetId() {
         String expected = "Devon";
