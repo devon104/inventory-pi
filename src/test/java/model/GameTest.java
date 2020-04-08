@@ -8,20 +8,24 @@ import org.junit.jupiter.api.Test;
 public class GameTest {
     @Test
     public void constructorTest() {
+        int expectedId = 1;
         String expectedRating = "T";
         String expectedName = "Zelda";
         String expectedPublisher = "Nintendo";
         String expectedPlatform = "Switch";
         double expectedPrice = 80.99;
 
-        Game testGame = new Game(expectedRating, expectedName, expectedPublisher, expectedPlatform, expectedPrice);
+        Game testGame = new Game(expectedId, expectedRating, expectedName,
+                expectedPublisher, expectedPlatform, expectedPrice);
 
+        Assertions.assertEquals(expectedId, testGame.getId());
         Assertions.assertEquals(expectedRating, testGame.getRating());
         Assertions.assertEquals(expectedName, testGame.getName());
         Assertions.assertEquals(expectedPublisher, testGame.getPublisher());
         Assertions.assertEquals(expectedPlatform, testGame.getPlatform());
         Assertions.assertEquals(expectedPrice, testGame.getPrice());
     }
+
     @Test
     public void testSetRating() {
         String expected = "T";
@@ -32,6 +36,7 @@ public class GameTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     void testSetName() {
         String expected = "Zelda";
@@ -42,6 +47,7 @@ public class GameTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     void testSetPublisher() {
         String expected = "Nintendo";
@@ -52,6 +58,7 @@ public class GameTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     void testSetPlatform() {
         String expected = "Switch";
@@ -62,6 +69,7 @@ public class GameTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     void testSetPrice() {
         double expected = 80.99;

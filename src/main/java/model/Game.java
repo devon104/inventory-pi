@@ -1,20 +1,26 @@
 package model;
 
 public class Game {
+    private int id;
     private String rating;
     private String name;
     private String publisher;
     private String platform;
     private double price;
 
-    public Game() {
-    }
-    public Game(String rating, String name, String publisher, String platform, double price) {
+    public Game() { }
+
+    public Game(int id, String rating, String name, String publisher, String platform, double price) {
+        this.id = id;
         this.rating = rating;
         this.name = name;
         this.publisher = publisher;
         this.platform = platform;
         this.price = price;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public void setRating(String rating) {

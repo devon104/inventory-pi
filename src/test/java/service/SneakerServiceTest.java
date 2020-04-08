@@ -2,10 +2,12 @@ package service;
 
 import model.Sneaker;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class SneakerServiceTest {
-    public void createTest() {
 
+    @Test
+    public void createTest() {
         String expectedName = "Stan Smith";
         String expectedBrand = "Adidas";
         String expectedSport = "Tennis";
@@ -17,7 +19,6 @@ public class SneakerServiceTest {
         Sneaker testSneaker = sneakerService.create(expectedName, expectedBrand,
                 expectedSport, expectedSize, expectedQty, expectedPrice);
 
-
         int actualId = testSneaker.getId();
         String actualName = testSneaker.getName();
         String actualBrand = testSneaker.getBrand();
@@ -26,7 +27,7 @@ public class SneakerServiceTest {
         int actualQty = testSneaker.getQty();
         double actualPrice = testSneaker.getPrice();
 
-        Assertions.assertEquals(Integer.class.getName(), Integer.class.getName());
+        Assertions.assertEquals(1, actualId);
         Assertions.assertEquals(expectedName, actualName);
         Assertions.assertEquals(expectedBrand, actualBrand);
         Assertions.assertEquals(expectedSport, actualSport);
