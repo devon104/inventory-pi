@@ -25,10 +25,7 @@ public class SneakerTest {
         Assertions.assertEquals(expectedSport, testSneaker.getSport());
         Assertions.assertEquals(expectedQty, testSneaker.getQty());
         Assertions.assertEquals(expectedPrice, testSneaker.getPrice());
-
     }
-
-
     @Test
     public void testSetName() {
         String expected = "Stan Smith";
@@ -38,8 +35,6 @@ public class SneakerTest {
         String actual = sneaker.getName();
 
         Assertions.assertEquals(expected, actual);
-
-
     }
 
     @Test
@@ -51,7 +46,6 @@ public class SneakerTest {
         String actual = sneaker.getBrand();
 
         Assertions.assertEquals(expected, actual);
-
     }
 
     @Test
@@ -74,7 +68,6 @@ public class SneakerTest {
         int actual = sneaker.getSize();
 
         Assertions.assertEquals(expected, actual);
-
     }
 
     @Test

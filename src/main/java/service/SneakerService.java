@@ -14,8 +14,5 @@ public class SneakerService {
         inventory.add(createdSneaker);
 
         return createdSneaker;
-
-
     }
-
 }

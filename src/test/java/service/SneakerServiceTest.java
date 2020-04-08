@@ -33,8 +33,5 @@ public class SneakerServiceTest {
         Assertions.assertEquals(expectedSize, actualSize);
         Assertions.assertEquals(expectedQty, actualQty);
         Assertions.assertEquals(expectedPrice, actualPrice);
-
     }
-
-
 }

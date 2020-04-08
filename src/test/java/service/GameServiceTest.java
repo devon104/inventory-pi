@@ -26,8 +26,6 @@ public class GameServiceTest {
         Assertions.assertEquals(expectedPlatform, actualPlatform);
         Assertions.assertEquals(expectedPrice, actualPrice);
     }
-
-
 }
 
 
