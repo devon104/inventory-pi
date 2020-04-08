@@ -9,7 +9,8 @@ public class Sneaker {
     private int qty;
     private double price;
 
-    public Sneaker() { }
+    public Sneaker() {
+    }
 
     public Sneaker(int id, String name, String brand, String sport, int size, int qty, double price) {
         this.id = id;
@@ -24,36 +25,64 @@ public class Sneaker {
     public void setName(String name) {
         this.name = name;
 
-
     }
-    public String getName(){
+
+    public String getName() {
         return name;
 
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
 
     }
-    public String getBrand(){
+
+    public String getBrand() {
         return brand;
+
     }
 
-    public int getId(){
+    public void setId(int id) {
+        this.id = id;
+
+    }
+
+    public int getId() {
         return id;
 
     }
 
-         public String getSport(){
+    public void setSport(String sport) {
+        this.sport = sport;
+    }
+
+    public String getSport() {
         return sport;
-        }
+    }
 
-        public int getQty(){
+
+    public void setQty(int qty) {
+        this.qty = qty;
+    }
+
+    public int getQty() {
         return qty;
-        }
+    }
 
 
-        public double getPrice() {
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public double getPrice() {
         return price;
-        }
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
 
     public int getSize() {
         return size;
-        }
+    }
 }

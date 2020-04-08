@@ -1,15 +1,16 @@
 package model;
 
-public class Games {
+public class Game {
     private String rating;
     private String name;
     private String publisher;
     private String platform;
     private double price;
 
-    public Games() { }
+    public Game() {
+    }
 
-    public Games(String rating, String name, String publisher, String platform, double price){
+    public Game(String rating, String name, String publisher, String platform, double price) {
         this.rating = rating;
         this.name = name;
         this.publisher = publisher;
@@ -22,7 +23,7 @@ public class Games {
         this.rating = rating;
     }
 
-    public String getRating(){
+    public String getRating() {
         return rating;
 
     }
@@ -31,32 +32,40 @@ public class Games {
         this.name = name;
     }
 
-    public String getName(){
+
+    public String getName() {
         return name;
     }
 
+
     public void setPublisher(String publisher) {
         this.publisher = publisher;
+
     }
 
     public String getPublisher() {
         return publisher;
+
     }
 
     public void setPlatform(String platform) {
         this.platform = platform;
+
     }
 
     public String getPlatform() {
         return platform;
+
     }
 
     public void setPrice(double price) {
         this.price = price;
+
     }
 
     public double getPrice() {
         return price;
+
     }
 
 }
